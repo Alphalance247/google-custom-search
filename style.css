@@ -23,7 +23,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3rem 3rem;
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0;
 }
 
 .search-enter img {
@@ -50,7 +52,8 @@
 /*///////////////////////////////////////////////////////////*/
 .search-results {
   padding-top: 1em;
-  padding-left: 13rem;
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 3em;
@@ -65,14 +68,13 @@
 .paraf-1 {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
   margin-bottom: 1em;
   align-items: center;
 }
 
 .paraf-1 h3 {
   color: rgb(36, 35, 35);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .paraf-1 p {
@@ -85,13 +87,13 @@
 }
 
 .paraf-2 a {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-decoration: none;
   text-align: left;
 }
 
 .paraf-2 p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   width: 80%;
 }
 
@@ -103,4 +105,122 @@
   display: flex;
   gap: 5px;
   flex-direction: column;
+}
+
+/* @media (max-width: 500px) {
+  
+} */
+
+@media only screen and (max-width: 600px) {
+  .search-enter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0.9rem 0;
+  }
+
+  .search-container input[type="text"] {
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 1em;
+    width: 20rem;
+    margin-top: 1rem;
+  }
+
+  .search-enter img {
+    width: 8rem;
+    display: block;
+    align-items: center;
+  }
+
+  .btn {
+    background-color: blue;
+    color: white;
+    padding: 0.67rem 1rem;
+    margin-left: -4.7rem;
+    margin-top: 1em;
+  }
+
+  /*////////////////////////*/
+  .paraf-1 h3 {
+    color: rgb(36, 35, 35);
+    font-size: 1rem;
+  }
+
+  .paraf-1 p {
+    font-size: 0.8rem;
+  }
+
+  .paraf-2 p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .search-results {
+    padding-top: 1em;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .search-enter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0.9rem 0;
+  }
+
+  .search-container input[type="text"] {
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 1em;
+    width: 20rem;
+    margin-top: 1rem;
+  }
+
+  .search-enter img {
+    width: 8rem;
+    display: block;
+    align-items: center;
+  }
+
+  .btn {
+    background-color: blue;
+    color: white;
+    padding: 0.67rem 1rem;
+    margin-left: -4.7rem;
+    margin-top: 1em;
+  }
+
+  /*////////////////////////*/
+  .paraf-1 h3 {
+    color: rgb(36, 35, 35);
+    font-size: 1rem;
+  }
+
+  .paraf-1 p {
+    font-size: 0.8rem;
+  }
+
+  .paraf-2 p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .search-results {
+    padding-top: 1em;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
 }
