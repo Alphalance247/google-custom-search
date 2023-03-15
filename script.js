@@ -1,4 +1,6 @@
 const btn = document.querySelector(".btn");
+const observer = document.querySelector(".stop");
+const View = document.querySelector(".search-enter");
 const inputValue = document.querySelector(".input");
 const parentEl = document.querySelector(".search-results");
 const API_URL = `https://www.googleapis.com/customsearch/v1?key=AIzaSyA_sUs7ZfeoLy31HX3iHUFaetPOJCbEiSY&cx=d7aff7dce5bda40e0&q
@@ -80,5 +82,18 @@ btn.addEventListener("click", function (e) {
     getRequest(val);
   } catch (err) {
     console.error(err.message, "🌟🌟");
+  }
+});
+
+//////Adding the intersection observer api
+const initialcords = observer.getBoundingClientRect();
+
+// console.log(initialcords);
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > initialcords.top) {
+    View.classList.add("sticky");
+  } else {
+    View.classList.remove("sticky");
   }
 });

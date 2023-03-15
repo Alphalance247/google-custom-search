@@ -9,11 +9,16 @@
   align-items: center;
 }
 
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
 .search-container input[type="text"] {
-  padding: 13px;
-  font-size: 1.3rem;
+  padding: 11px;
+  font-size: 1rem;
   border-radius: 1em;
-  width: 40rem;
+  width: 35rem;
   outline: none;
   color: black;
   border-color: blue;
@@ -31,7 +36,7 @@
   align-items: center;
   width: 90%;
   margin: auto;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 .search-enter img {
@@ -42,12 +47,13 @@
 .btn {
   background-color: blue;
   color: white;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 1.5rem 0.5rem 1.5rem;
   border-radius: 1em;
   border: none;
   cursor: pointer;
   transition: background-color 0.9s;
-  margin-left: -7.4rem;
+  margin-left: -5.9rem;
+  text-align: center;
 }
 
 .btn:hover,
@@ -117,8 +123,74 @@
   
 } */
 
-@media only screen and (max-width: 600px) {
-  hr {
+@media only screen and (max-width: 950px) {
+  .search-enter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0.9rem 0;
+  }
+
+  .search-container input[type="text"] {
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 1em;
+    width: 30rem;
+    margin-top: 1rem;
+  }
+
+  .search-enter img {
+    width: 8rem;
+    display: block;
+    align-items: center;
+  }
+
+  .btn {
+    background-color: blue;
+    color: white;
+    padding: 0.67rem 1rem;
+    margin-left: -4.7rem;
+    margin-top: 1em;
+  }
+
+  .paraf-1 h3 {
+    color: rgb(36, 35, 35);
+    font-size: 1rem;
+  }
+
+  .paraf-1 p {
+    font-size: 0.8rem;
+  }
+
+  .paraf-2 p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .search-results {
+    padding-top: 1em;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+
+  .search-results h1 {
+    text-decoration: underline overline blueviolet;
+    color: darkblue;
+    margin-left: 3.5rem;
+    font-size: 1.7rem;
+    width: 80%;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .stop {
     width: 99%;
   }
 
@@ -141,16 +213,16 @@
 
   .search-enter img {
     width: 8rem;
-    display: block;
-    align-items: center;
+    margin-left: 5rem;
   }
 
   .btn {
     background-color: blue;
     color: white;
-    padding: 0.67rem 1rem;
+    padding: 0.67rem 1.2rem;
     margin-left: -4.7rem;
     margin-top: 1em;
+    text-align: center;
   }
 
   /*////////////////////////*/
@@ -180,67 +252,10 @@
   .search-results h1 {
     text-decoration: underline overline blueviolet;
     color: darkblue;
-    margin-left: 5rem;
+    margin-left: 3.5rem;
     font-size: 1.3em;
     width: 70%;
     text-align: center;
     line-height: 2;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .search-enter {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 0.9rem 0;
-  }
-
-  .search-container input[type="text"] {
-    padding: 10px;
-    font-size: 0.8rem;
-    border-radius: 1em;
-    width: 20rem;
-    margin-top: 1rem;
-  }
-
-  .search-enter img {
-    width: 8rem;
-    display: block;
-    align-items: center;
-  }
-
-  .btn {
-    background-color: blue;
-    color: white;
-    padding: 0.67rem 1rem;
-    margin-left: -4.7rem;
-    margin-top: 1em;
-  }
-
-  /*////////////////////////*/
-  .paraf-1 h3 {
-    color: rgb(36, 35, 35);
-    font-size: 1rem;
-  }
-
-  .paraf-1 p {
-    font-size: 0.8rem;
-  }
-
-  .paraf-2 p {
-    font-size: 0.9rem;
-    width: 100%;
-  }
-
-  .search-results {
-    padding-top: 1em;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
   }
 }
