@@ -14,19 +14,9 @@
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-.search-container input[type="text"] {
-  padding: 11px;
-  font-size: 1rem;
-  border-radius: 1em;
-  width: 35rem;
-  outline: none;
-  color: black;
-  border-color: blue;
-}
-
 .search-results h1 {
   text-decoration: underline overline blueviolet;
-  color: darkblue;
+  color: #3d3d3d;
   margin-left: 7rem;
 }
 
@@ -44,21 +34,34 @@
   margin-right: 4rem;
 }
 
-.btn {
-  background-color: blue;
-  color: white;
-  padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+/*//////////*/
+.search-container input[type="text"] {
+  padding: 11px;
+  font-size: 1rem;
   border-radius: 1em;
+  width: 35rem;
+  outline: none;
+  color: black;
+  border-color: #3d3d3d;
+}
+
+.btn {
+  padding: 1.2em 3em;
+  color: blue;
+  border-color: 3px solid white;
+  border-radius: 25px;
+  background-color: #3d3d3d;
   border: none;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.9s;
-  margin-left: -5.9rem;
-  text-align: center;
+  margin-left: -7rem;
+  text-transform: uppercase;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: darkblue;
+  background: royalblue;
+  transition: background-color 0.9s;
 }
 
 /*///////////////////////////////////////////////////////////*/
@@ -119,10 +122,6 @@
   flex-direction: column;
 }
 
-/* @media (max-width: 500px) {
-  
-} */
-
 @media only screen and (max-width: 950px) {
   .search-enter {
     display: flex;
@@ -148,7 +147,7 @@
   }
 
   .btn {
-    background-color: blue;
+    background-color: #3d3d3d;
     color: white;
     padding: 0.67rem 1rem;
     margin-left: -4.7rem;
@@ -180,7 +179,7 @@
 
   .search-results h1 {
     text-decoration: underline overline blueviolet;
-    color: darkblue;
+    color: #3d3d3d;
     margin-left: 3.5rem;
     font-size: 1.7rem;
     width: 80%;
@@ -217,7 +216,7 @@
   }
 
   .btn {
-    background-color: blue;
+    background-color: #3d3d3d;
     color: white;
     padding: 0.67rem 1.2rem;
     margin-left: -4.7rem;
@@ -251,7 +250,7 @@
 
   .search-results h1 {
     text-decoration: underline overline blueviolet;
-    color: darkblue;
+    color: #3d3d3d;
     margin-left: 3.5rem;
     font-size: 1.3em;
     width: 70%;
