@@ -250,7 +250,7 @@
 
   .search-results h1 {
     text-decoration: underline overline blueviolet;
-    color: darkblue;
+    color: #3d3d3d;
     margin-left: 3.5rem;
     font-size: 1.3em;
     width: 70%;
