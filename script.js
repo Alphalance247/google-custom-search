@@ -1,5 +1,4 @@
 const btn = document.querySelector(".btn");
-
 const inputValue = document.querySelector(".input");
 const parentEl = document.querySelector(".search-results");
 const API_URL = `https://www.googleapis.com/customsearch/v1?key=AIzaSyA_sUs7ZfeoLy31HX3iHUFaetPOJCbEiSY&cx=d7aff7dce5bda40e0&q
