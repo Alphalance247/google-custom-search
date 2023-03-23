@@ -17,7 +17,8 @@
 .search-results h1 {
   text-decoration: underline overline blueviolet;
   color: #3d3d3d;
-  margin-left: 7rem;
+  margin-top: 2rem;
+  margin-left: 14rem;
 }
 
 .search-enter {

@@ -83,19 +83,6 @@ btn.addEventListener("click", function (e) {
   }
 });
 
-//////Adding the intersection observer api
-// const initialcords = observer.getBoundingClientRect();
-
-// // console.log(initialcords);
-
-// window.addEventListener("scroll", function () {
-//   if (window.scrollY > initialcords.top) {
-//     View.classList.add("sticky");
-//   } else {
-//     View.classList.remove("sticky");
-//   }
-// });
-
 const header = document.querySelector(".stop");
 const nav = document.querySelector(".search-enter");
 
